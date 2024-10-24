@@ -1,3 +1,6 @@
+# Azure Kubernetes
+Set up a small and free Kubernetes Cluster in Azure
+
 # Preparations
 ## Azure CLI
 The following did not work for me.
@@ -25,6 +28,12 @@ To run the terraform apply you first need to login at Azure
 
     az login
 
+## Get Azure Regions
+    az account list-locations -o table
+
+## List Subscriptions
+    az account list
+
 # Code
 ## terraform.tfvars
 put in here all secret values
@@ -47,7 +56,10 @@ put in here all values, but no secrets
 
 # Terraform commands
 ## initialze Terraform
-    terraform init -upgrade
+    terraform init [-upgrade]
+
+## Terraform Validate
+    terraform validate
 
 ## create a Terraform execution plan
     terraform plan -var-file="terraform.tfvars"
