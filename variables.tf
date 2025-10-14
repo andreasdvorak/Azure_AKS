@@ -23,4 +23,3 @@ variable "tenant_id" {
     description = "tenant id for azure"
     type = string
 }
-
