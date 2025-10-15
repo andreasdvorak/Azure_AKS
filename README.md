@@ -12,13 +12,6 @@ Installation of Azure CLI
 
     curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
 
-## az extension
-I don´t know why but without the aks-preview extention I get an error setting up the AKS cluster
-
-    az extension add -n aks-preview
-    az extension list
-    az version
-
 ## az login
 To run the terraform apply you first need to login at Azure
 
